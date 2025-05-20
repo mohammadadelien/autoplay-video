@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Autoplay Video</title>
   <style>
-    /* حذف فاصله‌های اضافی صفحه و رنگ پس‌زمینه مشکی */
     body {
       margin: 0;
       background: black;
       overflow: hidden;
     }
-    /* تنظیم ویدیو برای نمایش کامل با حفظ نسبت تصویر */
     video {
       width: 100vw;
       height: 100vh;
-      object-fit: contain; /* یا cover برای پر کردن صفحه */
+      object-fit: contain;
       background: black;
     }
   </style>
 </head>
 <body>
-  <video autoplay playsinline >
+  <video autoplay playsinline muted>
     <source src="1.mp4" type="video/mp4" />
     مرورگر شما ویدیو را پشتیبانی نمی‌کند.
   </video>
